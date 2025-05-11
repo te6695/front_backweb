@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(177, 186, 194);
+        background-image: url(OIP.jpg);
+        background-size: 100%; /* Makes the image cover the entire background */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-position: center; /* Centers the image */
+      }
+      
+
+ 
+input{
+    text-align: left;
+    display: block;
+    border: solid;
+    font-size: larger;
+    border-radius: 20px;
+}
+.input{
+    border: solid;  
+    position: absolute;
+   transform: translate(70%,20%);
+    border-radius: 50PX;
+    padding: 50px;
+    background-color: rgb(218, 209, 199);
+    font-size: 30px;
+}
+.submit{
+    margin-left: 50px;
+    margin-top: 20px;
+     
+     position: relative;
+}
+ .head1{
+    text-align: center;
+    color: rgb(71, 92, 85);
+ }
+ .anch{
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: rgb(47, 92, 92);
+    font-style: italic;
+
+
+ }
+ .ref{
+ margin-top: 450px;
+ font-family: sans-serif;
+ font-size: 30px;
+ color: black; 
+ }
+ .input input{
+    border: none;
+    border-bottom: 1px #fff;
+    background-color: transparent;
+ }
+ label{
+    font-style: bold;
+    color: black;
+    
+
+ }
+ img{
+   margin-left:460px ;
+   position: absolute;
+   top: -2px;
+   left: calc(50%-50px);
+   font-size: smaller;
+   border-radius: 30px;
+ }
+ .err{
+   color: red;
+
+ }

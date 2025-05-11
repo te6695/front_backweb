@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootswatch/dist/journal/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <style>
+    a {
+      color: black;
+      font-size: 40px;
+    
+    }
+  </style>
+  <title>html elements</title>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">index
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">about</a>
+          </li>
+          <!-- <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">courses</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="w3schools/html">html</a>
+              <a class="dropdown-item" href="w3schools/css">css</a>
+              <a class="dropdown-item" href="w3schools/js">js</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <h1>እንኳን ደህና መ፡፡  well come!</h1>
+  <div class="row">
+    <!-- <div class="col-3">
+      <h1 style="color: red;">This is Heading1</h1>
+      <h2 style="color: green;">This is Heading2</h2>
+      <h3 style="color: blue;">This is Heading13</h3>
+      <h4 style="color: rgb(39, 37, 19);">This is Heading4</h4>
+      <h5 style="color: rgb(44, 48, 43);">This is Heading5</h5>
+      <h6 style="color: rgb(6, 15, 15);">This is Heading6</h6>
+    </div> -->
+    <div class="col-3">
+      <img src="OIP.jpg" alt=""
+        style="border: 4px solid green;height: 200px; width: 200px; border-radius: 50%; padding-left: 50px;">
+
+    </div>
+    <div class="col-3">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente ut eveniet, totam sunt itaque harum, error
+        sint esse dolorum est labore non beatae neque aliquam quaerat ipsam voluptatibus fuga ducimus!</p>
+    </div>
+  </div>
+  <a href="signup.html">home</a>
+  <p id="para"></p>
+
+
+  <script>
+    function add() {
+      var front = 10;
+      var n2 = 30;
+      var sum;
+      sum = front + n2;
+      document.getElementById('para').innerHTML = sum + " courses";
+    }
+  </script>
+  <button onclick="add()">To know how many courses</button>
+  <div class="row">
+    <div class="col-3">
+      <p>The principles of design: Balance
+        Balance in design is the distribution of elements of the design. Balance in web design is found in the
+        layout. The position of elements on the page determines how balanced the page appears.
+      </p>
+    </div>
+    <div class="col-3">
+      <p> Balance can be achieved through the use of color, texture, shape, size, spacing, and other elements.
+        When creating a balanced design,
+      </p>
+    </div>
+    <div class="col-3">
+      <p>
+        it is important to consider the overall layout and how each element is placed in relation to others.
+        For example, if you have a large image on one side of the page, you will need to add something of
+        similar size on the other side to create balance.
+      </p>
+
+    </div>
+    <div class="col-3">
+      <div class="card" style="width:18rem;">
+        <img
+          src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary"> go</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Username</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+              required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">State</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+
+        </div>
+      </form>
+    </div>
+  </div>
+  <table class="table">
+    <tr>
+      <td>s_Name</td>
+      <td>subject</td>
+      <td>marks</td>
+      <td>Edit</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Tamrat</td>
+      <td>AI</td>
+      <td>80</td>
+      <td> <span class="fa fa-pencil"> </span></td>
+    </tr>
+    <tr>
+      <td>OS</td>
+      <td>84</td>
+      <td> <span class="fa fa-pencil"> </span></td>
+    </tr>
+    <tr>
+      <td>IR</td>
+      <td>80</td>
+      <td> <span class="fa fa-pencil"> </span></td>
+    </tr>
+    <tr>
+      <td>IP</td>
+      <td>85</td>
+      <td> <span class="fa fa-pencil"></span> </td>
+    </tr>
+    <tr>
+      <td>C#</td>
+      <td>80</td>
+      <td> <span class="fa fa-pencil"> </span></td>
+    </tr>
+    <tr>
+      <td>SA</td>
+      <td>89</td>
+      <td> <span class="fa fa-pencil"> </span></td>
+    </tr>
+  </table>
+
+</body>
+<footer style="background-color: rgb(74, 77, 80);font-size: 50px;font-style: normal;">2025&copy;All Rights Reserved</footer>
+<hr>
+</html>
