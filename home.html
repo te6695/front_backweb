@@ -6,11 +6,40 @@
   <link rel="stylesheet" href="node_modules/bootswatch/dist/journal/bootstrap.min.css">
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
   <style>
-    a {
-      color: black;
-      font-size: 40px;
-    
+    body{
+      background-color: rgb(183, 182, 190);
     }
+    h1 {
+  position: relative;
+  padding-left: 50px;
+}
+
+h1::before {
+  content: attr(data-number);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: hwb(60 0% 0%);
+  color: black;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+ .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  pointer-events: auto;
+}
+
+
   </style>
   <title>html elements</title>
 </head>
@@ -47,9 +76,9 @@
             <div class="dropdown-menu">
               <a class="dropdown-item" href="w3schools/html">html</a>
               <a class="dropdown-item" href="w3schools/css">css</a>
-              <a class="dropdown-item" href="w3schools/js">js</a>
+              <a class="dropdown-item" href="https://www.w3schools.com/js">js</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
+              <a class="dropdown-item" href="www.w3schools/php">php</a>
             </div>
           </li>
         </ul>
@@ -76,6 +105,7 @@
 
     </div>
     <div class="col-3">
+ 
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente ut eveniet, totam sunt itaque harum, error
         sint esse dolorum est labore non beatae neque aliquam quaerat ipsam voluptatibus fuga ducimus!</p>
     </div>
@@ -96,17 +126,20 @@
   <button onclick="add()">To know how many courses</button>
   <div class="row">
     <div class="col-3">
+      <h1 data-number="1">stratedy</h1>
       <p>The principles of design: Balance
         Balance in design is the distribution of elements of the design. Balance in web design is found in the
         layout. The position of elements on the page determines how balanced the page appears.
       </p>
     </div>
     <div class="col-3">
+      <h1 data-number="2">Education</h1>
       <p> Balance can be achieved through the use of color, texture, shape, size, spacing, and other elements.
         When creating a balanced design,
       </p>
     </div>
     <div class="col-3">
+      <h1 data-number="3">Innovation</h1>
       <p>
         it is important to consider the overall layout and how each element is placed in relation to others.
         For example, if you have a large image on one side of the page, you will need to add something of

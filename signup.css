@@ -1,55 +1,128 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #306b0c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+ 
+        body {
+            font-family: sans-serif;
+            background-color: #143557; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            margin: 0;
+        }
 
-.auth {
-    border: 2px solid rgb(235, 223, 223);
-    border-radius: 50px;
-    padding: 20px;
-    background-color: #a38989;
-    width: 300px;   
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
+        .container {
+            width: 100%;
+            max-width: 400px; /* Increased max-width for a slightly wider form */
+            padding: 20px;
+        }
 
-.auth h2 {
-    text-align: center;
-    color: #007bff;
-    margin-bottom: 20px;
-    font-size: 5px;
-}
+        .card {
+            background-color: #fff;
+            padding: 30px; /* Increased padding for more space inside the card */
+            border-radius: 20px; /* More rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+        }
 
-.auth input[type="text"],
-.auth input[type="email"] ,
-.auth input[type="password"] 
-{
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 20px;
-}
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
 
-.auth input[type="submit"] {
-    background-color: #a6b6c7;
-    color: #fff;
-border: none;           
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top: 10px;
-    width: 100%;
-}
+        .alert-danger {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
 
-.auth input[type="submit"]:hover {
-    background-color: #0056b3;
-}
+        .alert-success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
 
-#submit {
-    margin-top: 10px;
-}
+        .mb-0 {
+            margin-bottom: 0;
+        }
+
+        .mb-3 {
+            margin-bottom: 1.5rem; /* Increased margin for more spacing */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold; /* Make labels bold */
+            font-size: 0.9rem;
+            color: #495057; /* Darker gray label color */
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ced4da; /* Lighter border color */
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        .form-control::placeholder {
+            color: #6c757d;
+            opacity: 1; /* Firefox */
+        }
+
+        .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #6c757d;
+        }
+
+        .form-control::-ms-input-placeholder { /* Microsoft Edge */
+            color: #6c757d;
+        }
+
+        input[type="radio"] {
+            margin-right: 0.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            color: #fff;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            background-color: #28a745; /* Green button color */
+            border: 1px solid #28a745; /* Green border color */
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+                border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .btn:hover {
+            background-color: #218838; /* Darker green on hover */
+            border-color: #1e7e34;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-3 {
+            margin-top: 1.5rem;
+        }
+
+        .btn-link {
+            color: #007bff; /* Blue link color */
+            text-decoration: none;
+        }
+
+        .btn-link:hover {
+            text-decoration: underline;
+        }
+    

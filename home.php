@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <title>home</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/bootswatch/dist/journal/bootstrap.min.css">
+    
 </head>
 <body>
-   <a href="index.php"
-   style="text-align:left";>logout</a> 
+   <a href="login.php"
+   style="text-align:right";>logout</a> 
    <h1 style="text-align:center;font-style:italic">wellcome! learn programming.</h1>
   
 
